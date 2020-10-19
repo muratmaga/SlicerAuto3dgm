@@ -26,15 +26,16 @@ class Auto3dgm(ScriptedLoadableModule):
     self.parent.title = "Auto3dgm" # TODO make this more human readable by adding spaces
     self.parent.categories = ["Auto3dgm"]
     self.parent.dependencies = []
-    self.parent.contributors = ["Doug Boyer (Duke University)"] # replace with "Firstname Lastname (Organization)"
+    self.parent.contributors = ["Doug Boyer (Duke University), Shan Shan (Mount Holyoke College)"] # replace with "Firstname Lastname (Organization)"
     self.parent.helpText = """
-This is an example of scripted loadable module bundled in an extension.
-It performs a simple thresholding on the input volume and optionally captures a screenshot.
+This module provides the Python3 implementation of the auto3dgm method. Specific of the method can be found in https://arxiv.org/pdf/1807.11887.pdf.
+See <a href="https://toothandclaw.github.io/how-to-use/"> for online documentation</a>
 """
     self.parent.helpText += self.getDefaultModuleDocumentationLink()
     self.parent.acknowledgementText = """
-This file was originally developed by Jean-Christophe Fillion-Robin, Kitware Inc.
-and Steve Pieper, Isomics, Inc. and was partially funded by NIH grant 3P41RR013218-12S1.
+      This module was developed by Doug Boyer, Shan Shan and Henry Kirvelashti for SlicerMorph. SlicerMorph was originally supported by an NSF/DBI grant, "An Integrated Platform for Retrieval, Visualization and Analysis of 3D Morphology From Digital Biological Collections" 
+      awarded to Murat Maga (1759883), Adam Summers (1759637), and Douglas Boyer (1759839). 
+      https://nsf.gov/awardsearch/showAward?AWD_ID=1759839&HistoricalAwards=false
 """ # replace with organization, grant and thanks.
 
     # module level data
